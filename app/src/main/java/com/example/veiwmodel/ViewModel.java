@@ -51,44 +51,4 @@ public class ViewModel extends android.arch.lifecycle.ViewModel {
                     }
                 });
     }
-
-/*    private MutableLiveData<ArrayList<Responsemodel>> responseModel;
-    private RetrofitlClient retrofitlClient;
-
-    public LiveData<ArrayList<Responsemodel>> getData(){
-
-        if(responseModel == null){
-            responseModel = new MutableLiveData<ArrayList<Responsemodel>>();
-            loadData();
-        }
-        return responseModel;
-    }
-
-    private void loadData() {
-        RetrofitService retrofitService = RetrofitlClient.getClient().create(RetrofitService.class);
-        retrofitService.getResponse()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<ArrayList<Responsemodel>>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
-
-                    @Override
-                    public void onNext(ArrayList<Responsemodel> responsemodels) {
-                        responseModel.setValue(responsemodels);
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-                });
-    }*/
 }
